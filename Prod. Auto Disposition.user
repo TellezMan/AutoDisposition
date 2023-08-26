@@ -1,0 +1,134 @@
+// ==UserScript==
+// @name         Prod. Auto Disposition
+// @namespace    work
+// @version      0.8
+// @description  Autoselect disposition!
+// @author       Erick Tellez
+// @match        
+// @run-at       document-end
+// @icon         https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFox-mTx2bOe9GMrcmQzZhf7zyo5A__CBQmAHHvYxRTSxnbzjM-wcmQ-8LlgtuJwoNXx4&usqp=CAU
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+
+
+    const notesField = document.getElementById("additionalNotes");
+    const satisfied = document.getElementById("A22064");
+    const mood = document.getElementById("A22072");
+
+    if (!notesField) return; // Exit if notesField is not present
+
+    function setMoodAndSatisfaction() {
+        satisfied.selectedIndex = 1;
+        mood.selectedIndex = 5;
+    }
+
+    notesField.addEventListener("input", function() {
+        let value = this.value;
+        let checkboxesToCheck = [];
+        let checkboxesToUnCheck = [];
+        let textToAdd = "";
+        let textToRemove = "";
+
+        if (value.includes("clr")) {
+            checkboxesToUnCheck = ["A21972", "A21976", "A21980", "A21984", "A21988", "A21996", "A22000",
+                                   "A22004", "A22008", "A22012", "A22016", "A22020", "A22024", "A22028",
+                                   "A22032", "A22036", "A22040", "A22044", "A22108", "A22112", "A22116",
+                                   "A22120", "A22124", "A22128", "A22132", "A22304", "A22344", "A22356",
+                                   "A22408", "A22440", "A22444", "A22448", "A22452", "A22456", "A22460",
+                                   "A22464", "A22468", "A22472", "A22476", "A22480", "A22484", "A22488",
+                                   "A22492", "A22496", "A22500", "A22504", "A22512", "A22516", "A22520",
+                                   "A22532", "A22536"]
+            notesField.value = ''
+
+            /*=============================INICIO NOTAS========================================
+
+            Para agregar un nuevo "macro" o palabra clave:
+
+            1. Copia el fragmento de código de abajo.
+            2. Pégalo justo antes de donde dice "//================================FIN NOTAS====================================".
+            3. Reemplaza `PALABRA_CLAVE` con la palabra clave que quieres detectar.
+            4. Completa los campos correspondientes como se explica a continuación:
+
+                     else if (value.includes('PALABRA_CLAVE')) {
+                        checkboxesToCheck = ["CODIGO1", "CODIGO2"];     // Añade los códigos de las casillas que quieres marcar estan en el google sheets.
+                        //checkboxesToUnCheck = ["CODIGO3", "CODIGO4"]; // (Opcional) Añade los códigos de las casillas que quieres desmarcar estan en el google sheets.(se debe remover el "//" del principio).
+                        textToAdd = "TEXTO_A_AÑADIR";                   // Añade la nota que quieres que se agregue.
+                        textToRemove = 'PALABRA_CLAVE';                 // Indica la palabra clave nuevamente.
+                        setMoodAndSatisfaction();}                      // No cambies esta línea. Es una función que se llama después.
+
+
+               =********************************************FRAGMENTO DE CODIGO A COPIAR***********************************************=
+               else if (value.includes('')) {
+                        checkboxesToCheck = ["", ""];
+                        //checkboxesToUnCheck = ["", ""];
+                        textToAdd = "";
+                        textToRemove = '';
+                        setMoodAndSatisfaction();}
+
+
+
+            */
+
+        } else if (value.includes('')) {
+                        checkboxesToCheck = ['A21972', 'A22008', 'A22444'];
+                        //checkboxesToUnCheck = ["", ""];
+                        textToAdd = "";
+                        textToRemove = '';
+                        setMoodAndSatisfaction();}
+
+else if (value.includes('')) {
+                        checkboxesToCheck = ['A21996', 'A22012', 'A22452'
+
+
+
+
+	];
+                        //checkboxesToUnCheck = ["", ""];
+                        textToAdd = "";
+                        textToRemove = '';
+                        setMoodAndSatisfaction();}
+
+
+
+
+
+
+
+
+
+        //================================FIN NOTAS====================================
+
+
+
+
+        // Check the boxes based on the condition
+        checkboxesToCheck.forEach(id => {
+            let elem = document.getElementById(id);
+            if (elem && elem.type === "checkbox") {
+                elem.checked = true;
+            }
+        });
+        checkboxesToUnCheck.forEach(id => {
+            let elem = document.getElementById(id);
+            if (elem && elem.type === "checkbox") {
+                elem.checked = false;
+            }
+        });
+
+        // Append the new text
+        if (textToAdd) {
+            this.value += textToAdd;
+        }
+
+        // Remove the specific keyword from the notes
+        if (textToRemove) {
+            this.value = this.value.replace(textToRemove, '');
+        }
+
+    });
+
+})();
