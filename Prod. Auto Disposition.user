@@ -63,8 +63,8 @@
 
                =********************************************FRAGMENTO DE CODIGO A COPIAR***********************************************=
                else if (value.includes('')) {
-                        checkboxesToCheck = ["", ""];
-                        //checkboxesToUnCheck = ["", ""];
+                        checkboxesToCheck = [];
+                        //checkboxesToUnCheck = [];
                         textToAdd = "";
                         textToRemove = '';
                         setMoodAndSatisfaction();}
@@ -73,24 +73,7 @@
 
             */
 
-        } else if (value.includes('')) {
-                        checkboxesToCheck = ['A21972', 'A22008', 'A22444'];
-                        //checkboxesToUnCheck = ["", ""];
-                        textToAdd = "";
-                        textToRemove = '';
-                        setMoodAndSatisfaction();}
-
-else if (value.includes('')) {
-                        checkboxesToCheck = ['A21996', 'A22012', 'A22452'
-
-
-
-
-	];
-                        //checkboxesToUnCheck = ["", ""];
-                        textToAdd = "";
-                        textToRemove = '';
-                        setMoodAndSatisfaction();}
+        } 
 
 
 
