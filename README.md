@@ -34,6 +34,7 @@ Vamos a darle click derecho y se va abrir un nuevo menú dónde seleccionaremos 
 Montar el script.
 
 En esta misma página al inicio hay dos archivos, uno de ellos se llama `Prod. Auto Disposition.user`, debemos darle click.
+
 ![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/4c18d4ad-5102-401d-8eb1-661edfb2e904)
 
 
