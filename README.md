@@ -15,15 +15,18 @@ Usen el siguiente link para instalar la extensión de tampermonkey y agregarla a
 
 Una vez instalado vamos a buscar la herramienta en la barra de extensiones.
 
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/9c919865-baa2-4114-af7b-e64c0d578279)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/a51c7f9b-6f31-45d9-8667-d88392c1c196)
+
 
 Se debe ver de esta manera.
 
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/95e69e34-1e2e-462f-aab1-58a1ae90ff23)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/df83f240-035d-4477-9844-e4b2e0329bb4)
+
 
 
 Vamos a darle click derecho y se va abrir un nuevo menú dónde seleccionaremos la opcion de "Dashboard"
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/7afcd0f2-a672-4f1b-ad59-9c7ac3683a77)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/32f3910f-d9a6-4113-a43e-ffbabfe723a4)
+
 
 
 ## **Segundo Paso**
@@ -31,23 +34,28 @@ Vamos a darle click derecho y se va abrir un nuevo menú dónde seleccionaremos 
 Montar el script.
 
 En esta misma página al inicio hay dos archivos, uno de ellos se llama `Prod. Auto Disposition.user`, debemos darle click.
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/c3a81714-893f-4821-9030-ec6cfc6ad55e)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/4c18d4ad-5102-401d-8eb1-661edfb2e904)
+
 
 Se desplegará el código del programa, ignorenlo por ahora, descargaremos el archivo dando click en el boton de descargar y lo guardaremos.
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/4b34b9f4-e02b-44e2-915e-04d275ce52b4)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/2989cf04-9b31-47d4-8245-786f3ffbcd79)
+
 
 ### Regresamos a la pestaña de "Dashboard" que abrimos antes en Tampermonkey para agregar el código.
 
 Vamos a ir a la seccion de "Utilities" arriba a la derecha y luego en "Import from file" vamos a dar click en "Choose File"
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/8ae66644-78c3-41f5-b438-77076ec271e4)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/e75c712a-5acb-4e30-94cd-32dca0dc53d7)
+
 
 Se abrirá una nueva ventana donde debemos buscar y seleccionar el archivo que recién descargamos llamado `Prod. Auto Disposition.user`
 
 Una vez seleccionado el archivo veremos una pantalla de confirmar la instalación, le daremos click a "Install"
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/85712b84-7619-4b03-901f-dd44cca4f67d)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/adb06f83-2b1f-4300-bb7d-7b72c4f3e78b)
+
 
 Y para verificar que todo se instaló correctamente iremos a "Installed Userscripts" y ahi veremos el archivo.
-![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/5c155f9a-9fa0-4842-aeb5-73aa33cec5c2)
+![image](https://github.com/TellezMan/AutoDisposition/assets/125960140/2a8e0cab-0c79-4835-a0bf-1c462567fc67)
+
 
 ## **Tercer Paso**
 Editar el "script" y agregar nuestras notas.
